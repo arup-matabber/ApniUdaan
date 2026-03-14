@@ -1,0 +1,473 @@
+{
+  "title": "Disha Lab",
+  "subtitle": "Build scenarios, compare outcomes, and show families the evidence.",
+  "stream": "Stream",
+  "course": "Course",
+  "collegeType": "College Type",
+  "college": "College",
+  "skills": "Skills",
+  "upskill": "Upskill",
+  "scholarships": "Scholarships",
+  "suggestForMe": "Suggest",
+  "addScenario": "Add Scenario",
+  "compare": "Compare",
+  "save": "Save",
+  "exportPDF": "Export PDF",
+  "share": "Share",
+  "language": "Language",
+  "consentMic": "Allow microphone to use the voice assistant.",
+  "consentAccept": "Allow",
+  "consentDecline": "Decline",
+  "noBadgesYet": "No badges yet",
+  "points": "Points",
+  "badges_1": "Badges",
+  "playgroundMode": "Auto-Experiment",
+  "sensitivityLens": "Sensitivity",
+  "governmentFirst": "Govt-First",
+  "clear": "Clear",
+  "reset": "Reset",
+  "totalScenarios": "Total scenarios",
+  "engagement": "Engagement",
+  "high": "High",
+  "summary": "Summary",
+  "netPresentValue": "Net Present Value",
+  "returnOnInvestment": "Return on Investment",
+  "employmentProbability": "Employment probability",
+  "averageStartingSalary": "Average starting salary",
+  "typicalTimeToEmployment": "Typical time to employment",
+  "employ": "Employ",
+  "startingSalary": "Starting Salary",
+  "timeToJob": "Time to job",
+  "months": "months",
+  "includesScholarship": "Includes scholarship & upskill assumptions",
+  "scholarshipOdds": "Scholarship Odds",
+  "explainVoice": "Explain (Voice)",
+  "export": "Export",
+  "voiceAssistant": "Voice Assistant",
+  "tryCommands": "Try: \"Compare\" / \"Explain ROI\"",
+  "close": "Close",
+  "listening": "Listening",
+  "on": "ON",
+  "off": "OFF",
+  "noTranscriptsYet": "No transcripts yet",
+  "suggestedCommands": "Suggested commands",
+  "copy": "Copy",
+  "done": "Done",
+  "interactiveVisualizer": "Interactive visualizer • Sankey / Timeline / Map",
+  "sankeyFlow": "Sankey / Flow",
+  "visualizeCourse": "Visualize course → jobs → salary flows",
+  "scenario": "Scenario",
+  "engineeringGovt": "Engineering — Govt",
+  "npv": "NPV",
+  "roi": "ROI",
+  "scenarioBuilderTitle": "Disha Lab",
+  "career": "Career",
+  "savedScenarios": "Saved Scenarios",
+  "noScenarios": "No scenarios yet. Add one.",
+  "exportSummary": "Export",
+  "voiceOn": "Stop",
+  "voiceOff": "Listen",
+  "totalPoints": "Total Points",
+  "scenarioBuilder": "Disha Lab",
+  "quiz": "Quiz",
+  "recommendations": "Recommendations",
+  "colleges": "Colleges",
+  "timeline": "Timeline",
+  "content": "Content Hub",
+  "remove": "Remove",
+  "listen": "Listen",
+  "stop": "Stop",
+  "badges": {
+    "beginner": "Beginner",
+    "explorer": "Explorer",
+    "careerPro": "Career Pro"
+  },
+  "streams": {
+    "arts": "Arts",
+    "science": "Science",
+    "commerce": "Commerce",
+    "vocational": "Vocational"
+  },
+  "courses": {
+    "ba": "B.A.",
+    "bfa": "B.F.A.",
+    "bsc": "B.Sc.",
+    "btech": "B.Tech",
+    "bcom": "B.Com.",
+    "bba": "B.B.A.",
+    "diploma": "Diploma",
+    "certificate": "Certificate Course"
+  },
+  "careers": {
+    "teacher": "Teacher",
+    "journalist": "Journalist",
+    "artist": "Artist",
+    "designer": "Designer",
+    "scientist": "Scientist",
+    "researcher": "Researcher",
+    "engineer": "Engineer",
+    "developer": "Developer",
+    "accountant": "Accountant",
+    "banker": "Banker",
+    "manager": "Manager",
+    "entrepreneur": "Entrepreneur",
+    "technician": "Technician",
+    "assistant": "Assistant",
+    "skilledworker": "Skilled Worker",
+    "operator": "Operator"
+  },
+  "recommendations_1": {
+    "title": "Personalized Recommendations",
+    "subtitle": "Discover career paths, colleges, and resources tailored to your profile and interests",
+    "loading": "Loading recommendations...",
+    "tabs": {
+      "streams": "Streams",
+      "degrees": "Degrees",
+      "colleges": "Colleges",
+      "careers": "Careers",
+      "content": "Content"
+    },
+    "streams": {
+      "noRecommendations": "No stream recommendations",
+      "noRecommendationsDesc": "Complete a career quiz to get personalized stream recommendations.",
+      "match": "match",
+      "studentsEnrolled": "students enrolled",
+      "jobGrowth": "job growth",
+      "learnMore": "Learn More"
+    },
+    "degrees": {
+      "noRecommendations": "No degree recommendations",
+      "noRecommendationsDesc": "Complete a career quiz to get personalized degree recommendations.",
+      "match": "match",
+      "years": "years",
+      "avgFee": "avg fee",
+      "viewColleges": "View Colleges"
+    },
+    "colleges": {
+      "noRecommendations": "No college recommendations",
+      "noRecommendationsDesc": "Complete a career quiz to get personalized college recommendations.",
+      "students": "students",
+      "perYear": "per year",
+      "viewDetails": "View Details"
+    },
+    "careers": {
+      "noRecommendations": "No career recommendations",
+      "noRecommendationsDesc": "Complete a career quiz to get personalized career recommendations.",
+      "match": "match",
+      "perYear": "per year",
+      "jobGrowth": "job growth",
+      "exploreCareer": "Explore Career"
+    },
+    "content": {
+      "noRecommendations": "No content recommendations",
+      "noRecommendationsDesc": "Complete a career quiz to get personalized content recommendations.",
+      "enrolled": "enrolled",
+      "accessContent": "Access Content"
+    },
+    "sampleData": {
+      "streams": {
+        "science": {
+          "name": "Science",
+          "description": "Mathematics, Physics, Chemistry, Biology and related fields",
+          "category": "STEM"
+        },
+        "commerce": {
+          "name": "Commerce",
+          "description": "Business, Economics, Accounting, Finance and related fields",
+          "category": "Business"
+        },
+        "arts": {
+          "name": "Arts & Humanities",
+          "description": "History, Sociology, Political Science, Literature and related fields",
+          "category": "Humanities"
+        },
+        "vocational": {
+          "name": "Vocational Studies",
+          "description": "Practical skills in fields like IT, Tourism, Hospitality, and Design",
+          "category": "Applied"
+        },
+        "law": {
+          "name": "Law",
+          "description": "Study of legal systems, rights, and justice",
+          "category": "Legal"
+        },
+        "medical": {
+          "name": "Medical",
+          "description": "MBBS, Nursing, Pharmacy, and related healthcare fields",
+          "category": "Healthcare"
+        },
+        "fineArts": {
+          "name": "Fine Arts",
+          "description": "Painting, Music, Dance, Theatre and other creative arts",
+          "category": "Creative"
+        },
+        "agriculture": {
+          "name": "Agriculture",
+          "description": "Farming, Soil Science, Horticulture, and Food Technology",
+          "category": "Agriculture"
+        }
+      },
+      "degrees": {
+        "btech": {
+          "name": "Bachelor of Technology",
+          "description": "Engineering degree with specialization in various technical fields",
+          "level": "Undergraduate"
+        },
+        "bcom": {
+          "name": "Bachelor of Commerce",
+          "description": "Commerce degree covering business, finance, and accounting",
+          "level": "Undergraduate"
+        },
+        "ba": {
+          "name": "Bachelor of Arts",
+          "description": "Focus on humanities and social sciences",
+          "level": "Undergraduate"
+        },
+        "bsc": {
+          "name": "Bachelor of Science",
+          "description": "Core science subjects like Physics, Chemistry, and Biology",
+          "level": "Undergraduate"
+        },
+        "mbbs": {
+          "name": "Bachelor of Medicine and Surgery (MBBS)",
+          "description": "Professional degree in medicine and surgery",
+          "level": "Undergraduate"
+        },
+        "bfa": {
+          "name": "Bachelor of Fine Arts",
+          "description": "Degree focusing on visual and performing arts",
+          "level": "Undergraduate"
+        },
+        "llb": {
+          "name": "Bachelor of Law (LLB)",
+          "description": "Degree in legal studies and law practice",
+          "level": "Undergraduate"
+        },
+        "bba": {
+          "name": "Bachelor of Business Administration",
+          "description": "Focus on management, marketing, and entrepreneurship",
+          "level": "Undergraduate"
+        }
+      },
+      "colleges": {
+        "iitDelhi": {
+          "name": "Indian Institute of Technology Delhi",
+          "type": "Government",
+          "location": "New Delhi, Delhi"
+        },
+        "delhiUniversity": {
+          "name": "Delhi University",
+          "type": "Government",
+          "location": "New Delhi, Delhi"
+        },
+        "christUniversity": {
+          "name": "Christ University",
+          "type": "Private",
+          "location": "Bengaluru, Karnataka"
+        },
+        "stXaviers": {
+          "name": "St. Xavier's College",
+          "type": "Private",
+          "location": "Mumbai, Maharashtra"
+        },
+        "aiims": {
+          "name": "All India Institute of Medical Sciences",
+          "type": "Government",
+          "location": "New Delhi, Delhi"
+        },
+        "nlsiu": {
+          "name": "National Law School of India University",
+          "type": "Government",
+          "location": "Bengaluru, Karnataka"
+        },
+        "bhu": {
+          "name": "Banaras Hindu University",
+          "type": "Government",
+          "location": "Varanasi, Uttar Pradesh"
+        },
+        "symbiosis": {
+          "name": "Symbiosis International University",
+          "type": "Private",
+          "location": "Pune, Maharashtra"
+        }
+      },
+      "careers": {
+        "softwareEngineer": {
+          "title": "Software Engineer",
+          "description": "Design, develop, and maintain software applications",
+          "industry": "Technology",
+          "growthRate": "High"
+        },
+        "charteredAccountant": {
+          "title": "Chartered Accountant",
+          "description": "Manage financial accounts, audits, and business taxation",
+          "industry": "Finance",
+          "growthRate": "High"
+        },
+        "civilServicesOfficer": {
+          "title": "Civil Services Officer",
+          "description": "Serve the nation in administrative roles",
+          "industry": "Government",
+          "growthRate": "Moderate"
+        },
+        "graphicDesigner": {
+          "title": "Graphic Designer",
+          "description": "Create visual content for digital and print media",
+          "industry": "Design",
+          "growthRate": "High"
+        },
+        "doctor": {
+          "title": "Doctor",
+          "description": "Diagnose and treat patients across various specializations",
+          "industry": "Healthcare",
+          "growthRate": "High"
+        },
+        "lawyer": {
+          "title": "Lawyer",
+          "description": "Advocate for clients in courts and provide legal advice",
+          "industry": "Legal",
+          "growthRate": "High"
+        },
+        "entrepreneur": {
+          "title": "Entrepreneur",
+          "description": "Start and manage your own business venture",
+          "industry": "Business",
+          "growthRate": "Very High"
+        },
+        "dataScientist": {
+          "title": "Data Scientist",
+          "description": "Analyze data to extract insights and build predictive models",
+          "industry": "Technology",
+          "growthRate": "Very High"
+        }
+      },
+      "content": {
+        "jeeGuide": {
+          "title": "Complete Guide to JEE Preparation",
+          "description": "Comprehensive study material for JEE Main and Advanced",
+          "type": "Study Material"
+        },
+        "commercePack": {
+          "title": "Commerce Starter Pack",
+          "description": "Covers basics of accounting, economics, and business studies",
+          "type": "E-Book"
+        },
+        "upscGuide": {
+          "title": "UPSC Preparation Guide",
+          "description": "Key strategies, notes, and mock tests for UPSC aspirants",
+          "type": "Course"
+        },
+        "graphicDesignCourse": {
+          "title": "Graphic Design for Beginners",
+          "description": "Learn Photoshop, Illustrator, and Figma basics",
+          "type": "Video Course"
+        },
+        "neetCourse": {
+          "title": "NEET Crash Course",
+          "description": "Quick revision for NEET aspirants with mock tests",
+          "type": "Course"
+        },
+        "corporateLaw": {
+          "title": "Corporate Law Basics",
+          "description": "Introduction to business and corporate law",
+          "type": "E-Book"
+        },
+        "entrepreneurshipMaster": {
+          "title": "Entrepreneurship Masterclass",
+          "description": "Step-by-step guide to launching and scaling startups",
+          "type": "Webinar"
+        },
+        "dataScienceBootcamp": {
+          "title": "Data Science Bootcamp",
+          "description": "Hands-on projects in Python, ML, and AI",
+          "type": "Course"
+        } 
+      }
+    }
+  }
+  ,
+  "hero": {
+    "slide1": { "title": "Confused about your future?", "subtitle": "Discover the right subject stream and career path tailored to your interests" },
+    "slide2": { "title": "Explore Government Colleges Near You", "subtitle": "Find course details, eligibility, and facilities at government colleges" },
+    "slide3": { "title": "Map Your Career Journey", "subtitle": "Explore degrees and the careers they unlock" },
+    "slide4": { "title": "Personalized Guidance Powered by AI", "subtitle": "Personalized picks for courses, colleges, and study materials" }
+  },
+  "buttons": { "takeQuiz": "Take the Quiz", "exploreColleges": "Explore Colleges", "browseResources": "Browse Resources", "getStarted": "Get Started Now" },
+  "features": {
+    "title": "Unlock Your Potential", "subtitle": "Discover the tools that will guide you towards your dream career",
+    "quiz": { "title": "Aptitude & Interest Quiz", "desc": "Discover your strengths and interests with our comprehensive assessment." },
+    "path": { "title": "Career Pathway Mapping", "desc": "Visualize your career journey with interactive pathway maps." },
+    "colleges": { "title": "Government Colleges Directory", "desc": "Explore 500+ government colleges with detailed program information." },
+    "timeline": { "title": "Timeline Tracker", "desc": "Stay on track with personalized timelines for admissions and exams." },
+    "guidance": { "title": "Personalized Guidance", "desc": "Get AI-powered recommendations tailored to your profile." }
+  },
+  "journey": {
+    "title": "Your Journey Starts Here",
+    "step1": { "description": "Begin your personalized career discovery" },
+    "quiz": "Take Quiz", "quizDesc": "Complete our aptitude assessment",
+    "stream": "Discover Stream", "streamDesc": "Find your ideal subject stream",
+    "careers": "Explore Careers", "careersDesc": "Discover exciting career options",
+    "colleges": "Find Colleges", "collegesDesc": "Browse suitable colleges",
+    "timeline": "Plan Timeline", "timelineDesc": "Create your success roadmap"
+  },
+  "stats": {
+    "studentsGuided": "Students Guided",
+    "collegesListed": "Colleges Listed",
+    "careerPaths": "Career Paths",
+    "studyResources": "Study Resources"
+  },
+  "resources": {
+    "title": "Curated Study Resources",
+    "subtitle": "Access high-quality, subject-specific study materials to excel in your chosen stream",
+    "browse": "Browse Resources"
+  },
+  "whyUs": {
+    "title": "Why Choose Us?",
+    "aiInsights": { "title": "AI-Powered Insights", "desc": "Get recommendations based on advanced algorithms and real-time data." },
+    "govFocus": { "title": "Government-Focused", "desc": "Exclusive directory of government colleges and programs." },
+    "freeAccess": { "title": "Completely Free", "desc": "All our tools and resources are free for every student." },
+    "expertCurated": { "title": "Expert Curated", "desc": "Content verified by education experts and counselors." }
+  },
+  "impact": {
+    "heading": "Our Impact",
+    "subheading": "See how we're making a difference in students' lives",
+    "students": "Students Guided",
+    "colleges": "Colleges Listed",
+    "careers": "Career Paths Explored",
+    "resources": "Resources Available",
+    "award": "Award-Winning Platform",
+    "collaboration": "Government Collaboration",
+    "verified": "Verified Content"
+  },
+  "testimonials": {
+    "title": "What Students Say",
+    "heading": "What Students Say",
+    "subheading": "Hear from our successful users",
+    "rahul": { "quote": "Amazing platform! The timeline tracker ensured I never missed any important admission deadlines.", "name": "Rahul Sharma", "class": "Class 12 Student" },
+    "ananya": { "quote": "Found the perfect college for my CA course through their detailed college directory. Highly recommended!", "name": "Ananya Patel", "class": "Commerce Graduate" },
+    "rohan": { "quote": "The AI recommendations were spot on! Helped me choose between engineering branches.", "name": "Rohan Mehta", "class": "Class 12, Science" },
+    "sneha": { "quote": "Thanks to the study resources, I aced my board exams. Great platform!", "name": "Sneha Sharma", "class": "Class 10" },
+    "arjun": { "quote": "Discovered my interest in arts through the quiz. Now pursuing my passion!", "name": "Arjun Nair", "class": "Class 12, Arts" },
+    "priya": { "quote": "The career quiz helped me discover my passion for environmental science. Now I'm pursuing my dream course!", "name": "Priya Singh", "class": "Science Student" },
+    "vikram": { "quote": "Excellent resources for JEE preparation. The personalized timeline kept me organized throughout.", "name": "Vikram Reddy", "class": "Engineering Aspirant" }
+  },
+  "cta": {
+    "title": "Ready to Start Your Journey?",
+    "subtitle": "Take our free career assessment quiz and unlock your potential today."
+  },
+  "footer": {
+    "description": "Empowering students to make informed decisions about their future through personalized guidance and comprehensive resources.",
+    "quickLinks": "Quick Links",
+    "careerQuiz": "Career Quiz",
+    "colleges": "Colleges",
+    "studyMaterials": "Study Materials",
+    "timeline": "Timeline",
+    "resources": "Resources",
+    "recommendations": "Recommendations",
+    "profile": "Profile",
+    "savedItems": "Saved Items",
+    "contact": "Contact",
+    "contactDesc": "Have questions? We're here to help you on your career journey.",
+    "copyright": "© 2024 Career & Education Advisor. All rights reserved."
+  }
+}
