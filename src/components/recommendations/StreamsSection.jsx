@@ -1,0 +1,69 @@
+"use client";
+import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import { Button } from "../ui/button";
+import { Badge } from "../ui/badge";
+import { Star, Users, TrendingUp, ExternalLink } from "lucide-react";
+import { useTranslation } from "react-i18next";
+
+export default function StreamsSection({ data }) {
+  const { t } = useTranslation();
+
+  const safeData = Array.isArray(data) ? data : [];
+
+  if (safeData.length === 0) {
+    return (
+      <Card className="border-0 shadow-lg">
+        <CardContent className="p-12 text-center">
+          <Star className="h-16 w-16 text-gray-400 mx-auto mb-4" />
+          <h3 className="text-xl font-semibold mb-2">
+            {t("recommendations_1.streams.noRecommendations")}
+          </h3>
+          <p className="text-gray-600">
+            {t("recommendations_1.streams.noRecommendationsDesc")}
+          </p>
+        </CardContent>
+      </Card>
+    );
+  }
+
+  return (
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {safeData.map((stream) => (
+        <Card key={stream._id} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <CardHeader>
+            <div className="flex items-center justify-between mb-2">
+              <Badge className="bg-blue-100 text-blue-800">{stream.category}</Badge>
+              <div className="flex items-center">
+                <Star className="h-4 w-4 text-yellow-500 mr-1" />
+                <span className="text-sm text-gray-600">
+                  {stream.matchScore}% {t("recommendations_1.streams.match")}
+                </span>
+              </div>
+            </div>
+            <CardTitle className="text-lg">{stream.name}</CardTitle>
+          </CardHeader>
+
+          <CardContent>
+            <p className="text-gray-600 mb-4">{stream.description}</p>
+
+            <div className="space-y-2 mb-4">
+              <div className="flex items-center text-sm text-gray-500">
+                <Users className="h-4 w-4 mr-2" />
+                <span>{t("recommendations_1.streams.studentsEnrolled")}</span>
+              </div>
+              <div className="flex items-center text-sm text-gray-500">
+                <TrendingUp className="h-4 w-4 mr-2" />
+                <span>{t("recommendations_1.streams.jobGrowth")}</span>
+              </div>
+            </div>
+
+            <Button className="w-full bg-transparent" variant="outline">
+              {t("recommendations_1.streams.learnMore")}
+              <ExternalLink className="h-4 w-4 ml-2" />
+            </Button>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  );
+}
