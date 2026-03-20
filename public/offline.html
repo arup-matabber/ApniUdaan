@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline - Career & Education Advisor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .container {
+            text-align: center;
+            max-width: 500px;
+            padding: 2rem;
+        }
+        
+        .icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        
+        .features {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: left;
+        }
+        
+        .features h3 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .features ul {
+            list-style: none;
+        }
+        
+        .features li {
+            padding: 0.5rem 0;
+            opacity: 0.9;
+        }
+        
+        .features li:before {
+            content: "✓ ";
+            color: #4ade80;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        
+        .button {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            margin: 0.5rem;
+        }
+        
+        .button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .status {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+            
+            .icon {
+                width: 80px;
+                height: 80px;
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon pulse">
+            📚
+        </div>
+        
+        <h1>You're Offline</h1>
+        <p>
+            No internet connection detected. Don't worry - you can still access some features 
+            of the Career & Education Advisor platform.
+        </p>
+        
+        <div class="features">
+            <h3>Available Offline:</h3>
+            <ul>
+                <li>View previously loaded quiz results</li>
+                <li>Browse cached college information</li>
+                <li>Access saved recommendations</li>
+                <li>Review bookmarked content</li>
+                <li>View timeline events</li>
+            </ul>
+        </div>
+        
+        <div>
+            <a href="/" class="button" onclick="window.location.reload()">
+                Try Again
+            </a>
+            <a href="/quiz" class="button">
+                View Quizzes
+            </a>
+            <a href="/bookmarks" class="button">
+                My Bookmarks
+            </a>
+        </div>
+        
+        <div class="status" id="status">
+            <span id="connection-status">Checking connection...</span>
+        </div>
+    </div>
+
+    <script>
+        // Check connection status
+        function updateConnectionStatus() {
+            const status = document.getElementById('connection-status');
+            if (navigator.onLine) {
+                status.textContent = '✅ Connection restored! Refreshing...';
+                setTimeout(() => {
+                    window.location.reload();
+                }, 2000);
+            } else {
+                status.textContent = '❌ Still offline. Will retry automatically.';
+            }
+        }
+        
+        // Listen for connection changes
+        window.addEventListener('online', updateConnectionStatus);
+        window.addEventListener('offline', updateConnectionStatus);
+        
+        // Initial check
+        updateConnectionStatus();
+        
+        // Periodic connection check
+        setInterval(updateConnectionStatus, 5000);
+        
+        // Service worker registration check
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.ready.then(registration => {
+                console.log('Service Worker ready:', registration);
+            });
+        }
+        
+        // Handle navigation attempts
+        document.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A' && e.target.href.startsWith(window.location.origin)) {
+                e.preventDefault();
+                
+                // Try to navigate, fallback to current page if offline
+                fetch(e.target.href, { method: 'HEAD' })
+                    .then(() => {
+                        window.location.href = e.target.href;
+                    })
+                    .catch(() => {
+                        // Check if we have cached version
+                        if ('caches' in window) {
+                            caches.match(e.target.href)
+                                .then(response => {
+                                    if (response) {
+                                        window.location.href = e.target.href;
+                                    } else {
+                                        alert('This page is not available offline. Please check your connection.');
+                                    }
+                                });
+                        } else {
+                            alert('This page is not available offline. Please check your connection.');
+                        }
+                    });
+            }
+        });
+    </script>
+</body>
+</html>
